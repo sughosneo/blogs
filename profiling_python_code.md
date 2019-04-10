@@ -13,6 +13,7 @@ Let's see how it happens ? To see the implementation here is the github referenc
 2. And in another file SecondNameList.json we have less names. 
 
 ##### In this <<Duplicate.py>> file - we do compare each name with another name in second list. 
+##### Complexity is  - O(n*n)
         
         def __isDuplicate(self,name,secondNameList):
 
@@ -209,7 +210,8 @@ Let's see how it happens ? To see the implementation here is the github referenc
         # Memory usage would be 16 MB and the total time took - 26.634 seconds
         
 
-##### In this <<DuplicateUpdated.py>> file - we do compare each name with another name in second list.
+##### In this <<DuplicateUpdated.py>> file - we make a hashmap and then we check for the dupliacte for each name in SecondNameList file.
+##### Complexity comes down to - O(n)
 
             def __isDuplicate(self, name, firstNameListDict):
 
@@ -417,7 +419,8 @@ Let's see how it happens ? To see the implementation here is the github referenc
 
             
            # Though the memory usage is same but the time stats and consumption has reduced down to - in 4.864 seconds
-                     
-Ref : 
+
+##### Note :
+If someone is using professional edition of pycharm then can use the cProfiling inbuilt module and look into the performance.   
 https://www.jetbrains.com/help/pycharm/profiler.html 
  
