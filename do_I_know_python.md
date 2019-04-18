@@ -10,21 +10,21 @@ for ease of study***.
 ## Basic
 ________________________________________________________________________________________________
 
-- `Installing **Python 3.x**` => on Windows,Linux
+- ***`Installing **Python 3.x**`*** => on Windows,Linux
 
-- `Primitive Types` => int,float,bool
+- ***`Primitive Types`*** => int,float,bool
 
-- `Null Value` => **None**
+- ***`Null Value`*** => **None**
 
-- `Relational Operators` => (!=,==,<,>,<=,=>,is)
+- ***`Relational Operators`*** => (!=,==,<,>,<=,=>,is)
 
-- `Conditional Statements` => if, elif, else
+- ***`Conditional Statements`*** => if, elif, else
 
-- `Loops` => for,while
+- ***`Loops`*** => for,while
 
-- `Strings` => Declares as **str**
+- ***`Strings`*** => Declares as **str**
 
-- `Everything is Object` [Ref](https://mail.python.org/pipermail/python-list/2015-June/691689.html) =>
+- ***`Everything is Object`*** [Ref](https://mail.python.org/pipermail/python-list/2015-June/691689.html) =>
    - In Python, "everything is an object" (that is, all values are objects)
      is because Python does not include any primitive unboxed values. Anything
      which can be used as a value (int, str, float, functions, modules, etc) are
@@ -36,83 +36,83 @@ ________________________________________________________________________________
         >>> id(Foo)
         142630324
    
-- `Mutable and Immutable Objects` =>
+- ***`Mutable and Immutable Objects`*** =>
  
-- **`Different predefined data structures in python`** => 
+- ***`Different predefined data structures in python`*** => 
     - Tuples        
     - List
     - Dictionary
     - Set
     
-- **`Iterate through a collections`** =>
+- ***`Iterate through a collections`*** =>
     - Range
     - Using **for (each) in (any collections)**
     
-- **`Comprehensions`** =>
+- ***`Comprehensions`*** =>
     - List
     - Set
     - Dictionary
     
-- **`Iterable and Iterator`** => 
+- ***`Iterable and Iterator`*** => 
     - iterate through the objects to fetch result
     - use of **next()** to fetch value.
         
-- **`Generators`** [Ref](https://www.geeksforgeeks.org/generators-in-python/) => is a function that returns an object which we can iterate over.    
+- ***`Generators`*** [Ref](https://www.geeksforgeeks.org/generators-in-python/) => is a function that returns an object which we can iterate over.    
     - all generators are iterators
     - are lazily evaluated
     - looks like functions
     - yield result        
     
-- **`Defining functions`** =>
+- ***`Defining functions`*** =>
     - with ***def*** statement.
     
-- **`Writing "Hello World"`** => with **print()**
+- ***`Writing "Hello World"`*** => with **print()**
  
-- **`Docstrings`** => Documenting python code.
+- ***`Docstrings`*** => Documenting python code.
 
-- **`Shebang`** => 
+- ***`Shebang`*** => 
     - (#!/usr/bin/env python3) let's script know which interpretor to choose
      
-- **`Importing module`** => with **import** statement
+- ***`Importing module`*** => with **import** statement
 
-- **`Absolute import Vs Relative import`** [Ref](https://www.youtube.com/watch?v=rehzDVnmhes) =>
+- ***`Absolute import Vs Relative import`*** [Ref](https://www.youtube.com/watch?v=rehzDVnmhes) =>
     - Relative import is standardized approach.
 
-- **`Python Execution model`** => How does a python script run ?    
+- ***`Python Execution model`*** => How does a python script run ?    
 
-- **`Difference between`** =>
+- ***`Difference between`*** =>
     - Python Module
     - Python Script
     - Python Program
     - Python Package     
 
-- **`Modularity in python`** =>
+- ***`Modularity in python`*** =>
     - Defining functions 
     - Defining module
     - Defining packages
 
-- **`\_\_future\_\_ statement`** [Ref](https://github.com/sughosneo/blogs/blob/master/__future__.md) =>    
+- ***`\_\_future\_\_ statement`*** [Ref](https://github.com/sughosneo/blogs/blob/master/__future__.md) =>    
     - This statement helps to run the code snippet with those functions and statements which would be available in future releases.
     
     
-- **`Exception Handling`** =>
+- ***`Exception Handling`*** =>
     - try
     - catch
     - finally
     - Generic and specific exception
 
-- **`Classes Vs Objects`** => This is standard OOPs concept, applicable in here too.
+- ***`Classes Vs Objects`*** => This is standard OOPs concept, applicable in here too.
 
-- **`Constructors`** => __init__
+- ***`Constructors`*** => __init__
 
-- **`Different types of methods`** [Ref](https://github.com/sughosneo/blogs/blob/master/type_of_methods_in_python.md) =>
+- ***`Different types of methods`*** [Ref](https://github.com/sughosneo/blogs/blob/master/type_of_methods_in_python.md) =>
     - instance methods
     - class methods
     - static methods
 
-- **`Inheritance`** => Base class and Subclass concepts like standard OOPs.
+- ***`Inheritance`*** => Base class and Subclass concepts like standard OOPs.
 
-- **`Dunder or magic methods`** [Ref](https://www.geeksforgeeks.org/dunder-magic-methods-python/) =>
+- ***`Dunder or magic methods`*** [Ref](https://www.geeksforgeeks.org/dunder-magic-methods-python/) =>
     - This is actually double underscore methods. 
     - There are quite a bit of them available in ptyhon. Ex - \_\_main\_\_,\_\_call\_\_ etc..
     
@@ -121,49 +121,55 @@ ________________________________________________________________________________
 ## Advanced
 ________________________________________________________________________________________________
 
-- Conditional Expression (extension of if/else statement) =>
-    - result = value if condition else other_value
+- **`Conditional Expression (extension of if/else statement)`** =>
+    - Example code snippet as per below :
     
-- Anonymous functions or Lambda expression =>
+    ```python
+      result = value if condition else other_value
+    ```
+    
+    
+- ***`Anonymous functions or Lambda expression`*** =>
     - lambda is an expression.
     - It gets evaluated a function.
     - ***lambda firstName : name.split()[-1]***
 
-- Difference between **def** and **lambda**
+- ***`Difference between def and lambda`***
+
     - ***def*** is a statement /  ***lambda*** is an expression.
     - func has a name / lambda is anonymous
     - arguments delimited by parentheses / argument list terminated by colon(:)
          
-- Parameterized python script =>
+- ***`Parameterized python script`*** =>
     - import argparse
     - parser = argparse.ArgumentParser(description='Process some integers.')
     - parser.add_argument(type=int,help='an integer for the accumulator')
     - args = parser.parse_args()
     
-- *args and **kwargs [Ref](https://www.geeksforgeeks.org/args-kwargs-python/) =>
+- `*args and **kwargs` [Ref](https://www.geeksforgeeks.org/args-kwargs-python/) =>
     - ***args** passing any number of parameter
     - ****kwargs** passing any number of key value pair as an arguments.
         
-- Package =>
+- ***`Package`*** =>
     - a module which can contain other modules
     
-- Module Vs Package =>
+- ***`Module Vs Package`*** =>
     - Packages are directories.
     - Modules are generally file.
                     
-- Ductyping [Ref](https://www.quora.com/What-is-Duck-typing-in-Python) =>
+- ***`Ductyping`*** [Ref](https://www.quora.com/What-is-Duck-typing-in-Python) =>
     - If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.
 
-- Callable Instance =>
+- ***`Callable Instance`*** =>
     - \_\_call\_\_() methods
     - classes are callable
 
-- Serializing Python Objects [Ref](https://github.com/sughosneo/blogs/blob/master/pickling_in_python.md) =>
+- ***`Serializing Python Objects`*** [Ref](https://github.com/sughosneo/blogs/blob/master/pickling_in_python.md) =>
     - Is the process whereby a python object hierarchy is converted into a bytestream and "Unpickling" is the inverse operation.
     
-- Functions are first class citizens [Ref](https://github.com/sughosneo/blogs/blob/master/first_class_functions_in_python.md) =>
+- ***`Functions are first class citizens`*** [Ref](https://github.com/sughosneo/blogs/blob/master/first_class_functions_in_python.md) =>
         
-- Nested functions =>
+- ***`Nested functions`*** =>
     
     <details><summary>Code</summary>
     <p>
@@ -222,7 +228,7 @@ ________________________________________________________________________________
     </p>
   </details>
     
-- Closures [Ref](https://www.programiz.com/python-programming/closure) =>
+- ***`Closures`*** [Ref](https://www.programiz.com/python-programming/closure) =>
         
     - It's a related concept with nested function that means function within a function.
     - This technique by which some data gets attached to the code is called closure in Python.
@@ -254,30 +260,30 @@ ________________________________________________________________________________
     </details>
     
             
-- Decorators [Ref](https://github.com/sughosneo/dsalgo/tree/master/src/design_patterns/decorator) =>
+- ***`Decorators`*** [Ref](https://github.com/sughosneo/dsalgo/tree/master/src/design_patterns/decorator) =>
     - Modify or enhance functions capability without changing function code.
     - It's just a syntactic sugar.    
 
 
-- Metaclasses [Ref](https://pythontips.com/2013/09/20/all-about-the-metaclasses-in-python/) =>
+- ***`Metaclasses`*** [Ref](https://pythontips.com/2013/09/20/all-about-the-metaclasses-in-python/) =>
     - Metaclasses are the ‘stuff’ that creates classes.
     - You define classes in order to create objects, right?
     - Python classes are objects,***metaclasses*** are the one who create these objects.
     - In Python3 onwards function ***type()*** is a metaclass. It lets you create class on the fly.
 
 
-- Monkey Patching [Ref](https://www.geeksforgeeks.org/monkey-patching-in-python-dynamic-behavior/) =>
+- ***`Monkey Patching`*** [Ref](https://www.geeksforgeeks.org/monkey-patching-in-python-dynamic-behavior/) =>
     
     - In Python, the term monkey patch refers to dynamic (or run-time) modifications of a class or module.
     - In Python, we can actually change the behavior of code at run-time.
     - Classes are mutable so we can reopen them and modify or even replace them.
 
-- Abstract base classes [Ref](https://www.geeksforgeeks.org/abstract-classes-in-python/) =>
+- ***`Abstract base classes`*** [Ref](https://www.geeksforgeeks.org/abstract-classes-in-python/) =>
     - There is a popular say ***"Code towards abstraction"***
     - It's an important feature define a single interface to holding all the possible attribute or methods in a framework.
     - from abc import ABC,abstractproperty,abstractmethod         
 
-- Annotation typing [Ref](https://dev.to/dstarner/using-pythons-type-annotations-4cfe) =>
+- ***`Annotation typing`*** [Ref](https://dev.to/dstarner/using-pythons-type-annotations-4cfe) =>
     - Though python is a dynamic language. But in [PEP-848](https://www.python.org/dev/peps/pep-0484/) 
      type hinting has been introduced.
     - Developer still can specify type hinting in time of any variable use. Be it's a function or class attributes.
@@ -320,7 +326,7 @@ ________________________________________________________________________________
     </p>
     </details>    
     
-   - Data Classes [Ref](https://realpython.com/python-data-classes/) =>
+   - ***`Data Classes`*** [Ref](https://realpython.com/python-data-classes/) =>
         - It's a new feature in python 3.7
         - It's a designated type of class which holds only data.
         - If you notice above annotation example Person class is also holding data for the person's name and age.
@@ -356,10 +362,10 @@ ________________________________________________________________________________
         </p>
         </details> 
  
-    - Python program profiling [Ref](https://github.com/sughosneo/blogs/blob/master/profiling_python_code.md) =>
+    - ***`Python program profiling`*** [Ref](https://github.com/sughosneo/blogs/blob/master/profiling_python_code.md) =>
         - How python program execution happens. Looking into it in details.
         
-    - Obfuscating Python Code [Ref](https://github.com/sughosneo/blogs/blob/master/obfuscating_python.md) => 
+    - ***`Obfuscating Python Code`*** [Ref](https://github.com/sughosneo/blogs/blob/master/obfuscating_python.md) => 
         - Making python source code non-readable.
         
 #### References :
