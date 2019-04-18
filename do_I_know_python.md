@@ -121,7 +121,7 @@ ________________________________________________________________________________
 ## Advanced
 ________________________________________________________________________________________________
 
-- **`Conditional Expression (extension of if/else statement)`** =>
+- ***`Conditional Expression (extension of if/else statement)`*** =>
     - Example code snippet as per below :
     
     ```python
