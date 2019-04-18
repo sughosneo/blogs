@@ -146,7 +146,7 @@ ________________________________________________________________________________
     - parser.add_argument(type=int,help='an integer for the accumulator')
     - args = parser.parse_args()
     
-- `*args and **kwargs` [Ref](https://www.geeksforgeeks.org/args-kwargs-python/) =>
+- ***`*args and **kwargs`*** [Ref](https://www.geeksforgeeks.org/args-kwargs-python/) =>
     - ***args** passing any number of parameter
     - ****kwargs** passing any number of key value pair as an arguments.
         
