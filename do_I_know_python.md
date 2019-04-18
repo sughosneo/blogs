@@ -10,9 +10,9 @@ for ease of study***.
 ## Basic
 ________________________________________________________________________________________________
 
-- Installing **Python 3.x** => on Windows,Linux
+- `Installing **Python 3.x**` => on Windows,Linux
 
-- Primitive Types => int,float,bool
+- `Primitive Types` => int,float,bool
 
 - Null Value => **None**
 
