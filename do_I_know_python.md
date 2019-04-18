@@ -14,17 +14,17 @@ ________________________________________________________________________________
 
 - `Primitive Types` => int,float,bool
 
-- Null Value => **None**
+- `Null Value` => **None**
 
-- Relational Operators => (!=,==,<,>,<=,=>,is)
+- `Relational Operators` => (!=,==,<,>,<=,=>,is)
 
-- Conditional Statements => if, elif, else
+- `Conditional Statements` => if, elif, else
 
-- Loops => for,while
+- `Loops` => for,while
 
-- Strings => Declares as **str**
+- `Strings` => Declares as **str**
 
-- Everything is Object [Ref](https://mail.python.org/pipermail/python-list/2015-June/691689.html) =>
+- `Everything is Object` [Ref](https://mail.python.org/pipermail/python-list/2015-June/691689.html) =>
    - In Python, "everything is an object" (that is, all values are objects)
      is because Python does not include any primitive unboxed values. Anything
      which can be used as a value (int, str, float, functions, modules, etc) are
@@ -36,82 +36,83 @@ ________________________________________________________________________________
         >>> id(Foo)
         142630324
    
-- Mutable and Immutable Objects =>
+- `Mutable and Immutable Objects` =>
  
-- Different predefined data structures in python => 
+- **`Different predefined data structures in python`** => 
     - Tuples        
     - List
     - Dictionary
     - Set
     
-- Iterate through a collections =>
+- **`Iterate through a collections`** =>
     - Range
     - Using **for (each) in (any collections)**
     
-- Comprehensions =>
+- **`Comprehensions`** =>
     - List
     - Set
     - Dictionary
     
-- Iterable and Iterator => 
+- **`Iterable and Iterator`** => 
     - iterate through the objects to fetch result
     - use of **next()** to fetch value.
         
-- Generators [Ref](https://www.geeksforgeeks.org/generators-in-python/) => is a function that returns an object which we can iterate over.    
+- **`Generators`** [Ref](https://www.geeksforgeeks.org/generators-in-python/) => is a function that returns an object which we can iterate over.    
     - all generators are iterators
     - are lazily evaluated
     - looks like functions
     - yield result        
     
-- Defining functions =>
+- **`Defining functions`** =>
     - with ***def*** statement.
     
-- Writing "Hello World" => with **print()**
+- **`Writing "Hello World"`** => with **print()**
  
-- Docstrings => Documenting python code.
+- **`Docstrings`** => Documenting python code.
 
-- Shebang => 
+- **`Shebang`** => 
     - (#!/usr/bin/env python3) let's script know which interpretor to choose
      
-- Importing module => with **import** statement
+- **`Importing module`** => with **import** statement
 
-- Absolute import Vs Relative import
+- **`Absolute import Vs Relative import`** [Ref](https://www.youtube.com/watch?v=rehzDVnmhes) =>
+    - Relative import is standardized approach.
 
-- Python Execution model => How does a python script run ?
+- **`Python Execution model`** => How does a python script run ?    
 
-- Difference between =>
+- **`Difference between`** =>
     - Python Module
     - Python Script
     - Python Program
     - Python Package     
 
-- Modularity in **python** =>
+- **`Modularity in python`** =>
     - Defining functions 
     - Defining module
     - Defining packages
 
-- \_\_future\_\_ statement [Ref](https://github.com/sughosneo/blogs/blob/master/__future__.md) =>    
+- **`\_\_future\_\_ statement`** [Ref](https://github.com/sughosneo/blogs/blob/master/__future__.md) =>    
     - This statement helps to run the code snippet with those functions and statements which would be available in future releases.
     
     
-- Exception Handling =>
+- **`Exception Handling`** =>
     - try
     - catch
     - finally
     - Generic and specific exception
 
-- Classes Vs Objects => This is standard OOPs concept, applicable in here too.
+- **`Classes Vs Objects`** => This is standard OOPs concept, applicable in here too.
 
-- Constructors => __init__
+- **`Constructors`** => __init__
 
-- Different types of methods [Ref](https://github.com/sughosneo/blogs/blob/master/type_of_methods_in_python.md) =>
+- **`Different types of methods`** [Ref](https://github.com/sughosneo/blogs/blob/master/type_of_methods_in_python.md) =>
     - instance methods
     - class methods
     - static methods
 
-- Inheritance => Base class and Subclass concepts like standard OOPs.
+- **`Inheritance`** => Base class and Subclass concepts like standard OOPs.
 
-- Dunder or magic methods [Ref](https://www.geeksforgeeks.org/dunder-magic-methods-python/) =>
+- **`Dunder or magic methods`** [Ref](https://www.geeksforgeeks.org/dunder-magic-methods-python/) =>
     - This is actually double underscore methods. 
     - There are quite a bit of them available in ptyhon. Ex - \_\_main\_\_,\_\_call\_\_ etc..
     
