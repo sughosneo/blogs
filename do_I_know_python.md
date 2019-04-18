@@ -196,7 +196,7 @@ ________________________________________________________________________________
   
   - Returning local function / Yes, it can be done.
     
-    <details><summary>Another code snippet</summary>
+  <details><summary>Code</summary>
     <p>
                 
    ```python
@@ -219,7 +219,7 @@ ________________________________________________________________________________
         print(outer_func())
     ```    
     </p>
-    </details>
+  </details>
     
 - Closures [Ref](https://www.programiz.com/python-programming/closure) =>
         
