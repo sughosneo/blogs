@@ -31,10 +31,11 @@ ________________________________________________________________________________
     implemented as objects.
     - Below snippet show if you declare a class even that's also an object where specific memory reference is shown by **id()** function
     
-        
-        >>> class Foo(object): pass
-        >>> id(Foo)
-        142630324
+        ```python
+            >>> class Foo(object): pass
+            >>> id(Foo)
+            142630324
+        ```        
    
 - ***`Mutable and Immutable Objects`*** =>
  
