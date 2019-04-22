@@ -104,8 +104,24 @@ ________________________________________________________________________________
 
 - ***`Classes Vs Objects`*** => This is standard OOPs concept, applicable in here too.
 
-- ***`Constructors`*** => __init__
+- ***`Constructors`*** [Ref]() => 
+    - \_\_init\_\_ for a class to generate instance.
+    
+- ***`Destructors`*** [Ref]() => 
+    - _\_del\_\_ for a object destructor of a instance.
+    - Ideally you don't need to implement this destructor but for a class if someone wants to implement still they can. 
+    
+    ```python
+      
+        # Calling destructor 
+        def __del__(self): 
+            print("Destructor called") 
+          
+    ```
 
+- ***`Comparing two object`*** [Ref](https://www.geeksforgeeks.org/difference-operator-python/) =>
+    - We can do that using **is** operator in python
+        
 - ***`Different types of methods`*** [Ref](https://github.com/sughosneo/blogs/blob/master/type_of_methods_in_python.md) =>
     - instance methods
     - class methods
@@ -117,7 +133,16 @@ ________________________________________________________________________________
     - This is actually double underscore methods. 
     - There are quite a bit of them available in ptyhon. Ex - \_\_main\_\_,\_\_call\_\_ etc..
     
+- ***`Context Manages`*** [Ref](https://www.geeksforgeeks.org/context-manager-in-python/) =>
+    - Helps to manage resources.
+    - Ex - Database connection, File I/O connections etc.
+    - Open connection and other dangling references gets taken care as soon as control flow gets out of the **with** clause.
     
+    ```python
+      
+      with open("test.txt") as f:    
+          data = f.read() 
+    ```    
 
 ## Advanced
 ________________________________________________________________________________________________
@@ -133,7 +158,25 @@ ________________________________________________________________________________
 - ***`Anonymous functions or Lambda expression`*** =>
     - lambda is an expression.
     - It gets evaluated a function.
-    - ***lambda firstName : name.split()[-1]***
+    - ***lambda argument : expression***
+        - **Ex: -** lambda firstName : name.split()[-1]
+
+
+- ***`map() and filter() function`*** [Ref](https://medium.com/@happymishra66/lambda-map-and-filter-in-python-4935f248593) =>
+    
+    - map() / function let run the function object on each item on a iterable.
+    - filter() / function also does similar things. It let run the function on each item on a iterable.
+    - Example - 
+    
+    ```python
+    
+      map(lambda x : x*2, [1, 2, 3, 4]) #Output [2, 4, 6, 8]
+      
+      filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5])
+    ```
+    
+    
+
 
 - ***`Difference between def and lambda`***
 
@@ -362,7 +405,42 @@ ________________________________________________________________________________
         ```    
         </p>
         </details> 
- 
+    
+    - ***`Disposing/Cleaning up Python Obj`*** [Ref](https://stackoverflow.com/questions/865115/how-do-i-correctly-clean-up-a-python-object) =>
+        - It's recomended to use with statement.
+        - For any object automatically \_\_exit\_\_() method calls. If for the custom object specifically we could implement call
+            \_\_exit\_\_() method.
+           
+        <details><summary>Code</summary>
+        <p>
+                    
+        ```python
+            
+        class SkeletonFixture:
+
+        def __init__(self):
+            pass
+    
+        def __enter__(self):
+            return self
+    
+        def __exit__(self, exc_type, exc_value, traceback):
+            pass
+    
+        def method(self):
+            pass
+        
+        with SkeletonFixture() as fixture:
+            fixture.method()
+            
+        ```    
+        </p>
+        </details>
+                  
+        
+    - ***`Memory Management in Python`*** [Ref]() =>
+        - It's usually Garbage Collected by Cpython itself.
+         
     - ***`Python program profiling`*** [Ref](https://github.com/sughosneo/blogs/blob/master/profiling_python_code.md) =>
         - How python program execution happens. Looking into it in details.
         
