@@ -18,14 +18,18 @@ Searching
 
 Sorting
 ------------------------------------------------------
+***`Inplace sorting algorithm`*** [Ref](https://www.geeksforgeeks.org/in-place-algorithm/) =>
+    - Implementing not using extra space.
 
 - ***`Bubble Sort`*** [Ref](https://www.geeksforgeeks.org/binary-search/)=>
     - Implementation 
+    - It's inplace sorting algorithm
     - https://github.com/sughosneo/dsalgo/tree/master/src/sorting
     
     
 - ***`Insertion Sort`*** [Ref](https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/tutorial/)=>
     - Implementation
+    - It's inplace sorting algorithm
     - https://github.com/sughosneo/dsalgo/blob/master/src/sorting/InsertionSort.py
     
 - ***`Merge Sort`*** [Ref](https://www.geeksforgeeks.org/merge-sort/)=>
@@ -33,7 +37,8 @@ Sorting
     - https://github.com/sughosneo/dsalgo/blob/master/src/sorting/MergeSort.py
     
 - ***`Quick Sort`*** [Ref](https://www.geeksforgeeks.org/quick-sort/)=>
-    - Implementation 
+    - Implementation
+    - Broadly it's also referred as inplace sorting algorithm. Though it requires extra space for recursion calls. 
     - https://github.com/sughosneo/dsalgo/blob/master/src/sorting/QuickSort.py  
 
 - ***`Tim Sort`*** [Ref](https://hackernoon.com/timsort-the-fastest-sorting-algorithm-youve-never-heard-of-36b28417f399):
@@ -42,7 +47,7 @@ Sorting
 - ***`Is there any sorting algorithm of O(n) ?`***
     - https://www.youtube.com/watch?v=4Q72kbwyEmk  
     
-   ***`Complexity Table`***
+- ***`Complexity Table`***
     
    ![Complexity](./images/sorting_complexity.png)
 
