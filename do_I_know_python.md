@@ -38,6 +38,11 @@ ________________________________________________________________________________
         ```        
    
 - ***`Mutable and Immutable Objects`*** =>
+
+- ***`Passing argument to function`*** [Ref](https://www.python-course.eu/passing_arguments.php) =>
+    - When we pass the argument to a function it's not liked pass by value or
+    -   it's directly pass by reference. It's more like pass by object.
+    - For the scalar immutable object it never gets modified. For the mutable objects it gets changed unitl local name gets referenced.
  
 - ***`Different predefined data structures in python`*** => 
     - Tuples        
@@ -79,7 +84,8 @@ ________________________________________________________________________________
 - ***`Absolute import Vs Relative import`*** [Ref](https://www.youtube.com/watch?v=rehzDVnmhes) =>
     - Relative import is standardized approach.
 
-- ***`Python Execution model`*** => How does a python script run ?    
+- ***`Python Execution model`*** [Ref](https://docs.python.org/3/reference/executionmodel.html) => 
+    - How does a python script run ?    
 
 - ***`Difference between`*** =>
     - Python Module
@@ -370,82 +376,82 @@ ________________________________________________________________________________
     </p>
     </details>    
     
-   - ***`Data Classes`*** [Ref](https://realpython.com/python-data-classes/) =>
-        - It's a new feature in python 3.7
-        - It's a designated type of class which holds only data.
-        - If you notice above annotation example Person class is also holding data for the person's name and age.
-          And there constructor is involved to pass the data to the class during instantiation phase.
-        - But it has become simplified a bit with data classes. Below is the example :
-        
-        <details><summary>Code</summary>
-        <p>
-                    
-        ```python
-            
-        from typing import List
-        from dataclasses import dataclass
-        
-        @dataclass
-        class Person:
-        
-            name : str
-            age : int
-        
-            def getDetails(self) -> List:
-        
-                ''' Return type is List'''
-                return [self.name,self.age]
+- ***`Data Classes`*** [Ref](https://realpython.com/python-data-classes/) =>
+    - It's a new feature in python 3.7
+    - It's a designated type of class which holds only data.
+    - If you notice above annotation example Person class is also holding data for the person's name and age.
+      And there constructor is involved to pass the data to the class during instantiation phase.
+    - But it has become simplified a bit with data classes. Below is the example :
+    
+    <details><summary>Code</summary>
+    <p>
                 
-        if __name__ == '__main__':
+    ```python
         
-           person = Person("sumit",10)
-           print(person.name)
-           print(person.age)
-            
-        ```    
-        </p>
-        </details> 
+    from typing import List
+    from dataclasses import dataclass
     
-    - ***`Disposing/Cleaning up Python Obj`*** [Ref](https://stackoverflow.com/questions/865115/how-do-i-correctly-clean-up-a-python-object) =>
-        - It's recomended to use with statement.
-        - For any object automatically \_\_exit\_\_() method calls. If for the custom object specifically we could implement call
-            \_\_exit\_\_() method.
-           
-        <details><summary>Code</summary>
-        <p>
-                    
-        ```python
+    @dataclass
+    class Person:
+    
+        name : str
+        age : int
+    
+        def getDetails(self) -> List:
+    
+            ''' Return type is List'''
+            return [self.name,self.age]
             
-        class SkeletonFixture:
+    if __name__ == '__main__':
+    
+       person = Person("sumit",10)
+       print(person.name)
+       print(person.age)
+        
+    ```    
+    </p>
+    </details> 
+    
+- ***`Disposing/Cleaning up Python Obj`*** [Ref](https://stackoverflow.com/questions/865115/how-do-i-correctly-clean-up-a-python-object) =>
+    - It's recomended to use with statement.
+    - For any object automatically \_\_exit\_\_() method calls. If for the custom object specifically we could implement call
+        \_\_exit\_\_() method.
+       
+    <details><summary>Code</summary>
+    <p>
+                
+    ```python
+        
+    class SkeletonFixture:
 
-        def __init__(self):
-            pass
+    def __init__(self):
+        pass
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        pass
+
+    def method(self):
+        pass
     
-        def __enter__(self):
-            return self
-    
-        def __exit__(self, exc_type, exc_value, traceback):
-            pass
-    
-        def method(self):
-            pass
+    with SkeletonFixture() as fixture:
+        fixture.method()
         
-        with SkeletonFixture() as fixture:
-            fixture.method()
-            
-        ```    
-        </p>
-        </details>
+    ```    
+    </p>
+    </details>
                   
-        
-    - ***`Memory Management in Python`*** [Ref]() =>
-        - It's usually Garbage Collected by Cpython itself.
+
+- ***`Memory Management in Python`*** [Ref]() =>
+    - It's usually Garbage Collected by Cpython itself.
          
-    - ***`Python program profiling`*** [Ref](https://github.com/sughosneo/blogs/blob/master/profiling_python_code.md) =>
-        - How python program execution happens. Looking into it in details.
+- ***`Python program profiling`*** [Ref](https://github.com/sughosneo/blogs/blob/master/profiling_python_code.md) =>
+    - How python program execution happens. Looking into it in details.
         
-    - ***`Obfuscating Python Code`*** [Ref](https://github.com/sughosneo/blogs/blob/master/obfuscating_python.md) => 
-        - Making python source code non-readable.
+- ***`Obfuscating Python Code`*** [Ref](https://github.com/sughosneo/blogs/blob/master/obfuscating_python.md) => 
+    - Making python source code non-readable.
         
 #### References :
 
