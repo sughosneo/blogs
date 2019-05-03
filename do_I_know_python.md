@@ -452,6 +452,12 @@ ________________________________________________________________________________
         
 - ***`Obfuscating Python Code`*** [Ref](https://github.com/sughosneo/blogs/blob/master/obfuscating_python.md) => 
     - Making python source code non-readable.
+
+- ***`Testing Python Code`*** [Ref]() =>
+    - You can always perform Unit Test, Functional Test and Integration Test.
+    - Python provides very rich framework for perform Unit and Functional Testing.
+    
+    
         
 #### References :
 
