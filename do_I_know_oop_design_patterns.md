@@ -74,3 +74,4 @@ References
 
 [4] : https://www.u-cursos.cl/usuario/f133dab21b6cbf814b4607124f431358/mi_blog/r/head_first_design_patterns.pdf
 
+[5] : https://hackernoon.com/10-oop-design-principles-every-programmer-should-know-f187436caf65
