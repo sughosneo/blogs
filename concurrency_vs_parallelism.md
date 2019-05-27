@@ -11,6 +11,11 @@ When single task is divided into multiple simple independent sub-tasks which can
 
 ![Parallelism](./images/parallelism.png)
 
+***Different Type Of Concurrency***
+Here are the different types of concurrency and parallelism implementation in python 3.7 
+
+https://github.com/sughosneo/pyconcurrencydemo
+
 Ref :
 
 http://tutorials.jenkov.com/java-concurrency/concurrency-vs-parallelism.html
