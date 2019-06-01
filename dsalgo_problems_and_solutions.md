@@ -100,3 +100,7 @@ Example - Input: 'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT', Expected Output: [AAAAACCCC
 
 - ***`Given a string S, find the longest palindromic subsequence.`***
     - 
+    
+- ***`Heap implementation`***
+    - https://towardsdatascience.com/data-structure-heap-23d4c78a6962
+    - https://interactivepython.org/runestone/static/pythonds/Trees/BinaryHeapImplementation.html
