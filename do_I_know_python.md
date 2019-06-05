@@ -443,6 +443,9 @@ ________________________________________________________________________________
     </p>
     </details>
                   
+- ***`Python Pointers Or Object Model`*** [Ref](https://realpython.com/pointers-in-python/) =>
+    - Python Object model description.
+    - Pointer doesn't exist in python. Everything is an object.
 
 - ***`Memory Management in Python`*** [Ref]() =>
     - It's usually Garbage Collected by Cpython itself.
