@@ -442,13 +442,28 @@ ________________________________________________________________________________
     ```    
     </p>
     </details>
-                  
+
 - ***`Python Pointers Or Object Model`*** [Ref](https://realpython.com/pointers-in-python/) =>
     - Python Object model description.
     - Pointer doesn't exist in python. Everything is an object.
 
 - ***`Memory Management in Python`*** [Ref]() =>
     - It's usually Garbage Collected by Cpython itself.
+
+- ***`Asynchronous Programming In Python`*** [Ref](https://github.com/sughosneo/pyconcurrencydemo) =>
+    - Before even talking about the Async programming, someone should understand different concepts about
+    - Sync Single Threaded programming. 
+    - Threading/ Multithreading programming.
+    - Multiprocessing 
+    - Async I/O which came from Python 3.4+
+    - There are differences between concurrency and paraallelsim which has been described in [Ref](https://github.com/sughosneo/blogs/blob/master/concurrency_vs_parallelism.md) in here.
+    - python also has some bultin libraries to achieve that. but user needs to know the difference between CPU bound and I/O bound operations/calls. 
+    
+- ***`Event Driven Programming`*** [Ref](https://www.youtube.com/watch?v=rJHTK2TfZ1I)
+    - Event driven architecture is one of the programming model in different sceanrios. 
+    - It has it's advantages and disadvantages respectively. 
+    - It's different from standard request/response.
+    - Python has popular async event based task queue system available which is [celery](https://www.youtube.com/watch?v=kDoHrFLkahA) 
          
 - ***`Python program profiling`*** [Ref](https://github.com/sughosneo/blogs/blob/master/profiling_python_code.md) =>
     - How python program execution happens. Looking into it in details.
