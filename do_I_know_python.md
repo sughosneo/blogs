@@ -48,7 +48,21 @@ ________________________________________________________________________________
     - Tuples        
     - List
     - Dictionary
-    - Set
+    - Set [Ref](https://www.youtube.com/watch?v=MEPlLAjPvXY)
+     
+    ```python
+     
+      mySet = {1,'abc',2,7.8}
+      #or#
+      myCustomSet = set([1,'abc',2,7.8])
+       
+      # It doesn't have indexing concept like list. 
+      # You can't slice one set. 
+      # You can't access one value of a set using it's index number but you can loop through the elements.
+      # You would always need to have unique element in sets. You can't have duplicates items.
+  
+    ```
+        
     
 - ***`Iterate through a collections`*** =>
     - Range
