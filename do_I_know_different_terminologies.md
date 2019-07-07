@@ -134,3 +134,16 @@ Here are few of them :
 
 - ***`Waterfall Vs Agile`*** [Ref](https://www.guru99.com/waterfall-vs-agile.html)=>
     - This is software design and developement methodology.
+    
+- ***`Lazy Loading Vs Dynamic Loading`*** [Ref](https://www.geeksforgeeks.org/what-is-lazy-loading/)=>
+    - Lazy loading (also called on-demand loading) is an optimization technique for the online content, be it a website or a web app.
+    - All the programs are loaded in the main memeory for execution. Sometimes complete program is loaded into the memory, but some times a certain part or routine of the program is loaded into the main memory only when it is called by the program, this mechanism is called Dynamic Loading, this enhance the performance.
+    
+- ***`Containers Vs Virtual Machine`*** [Ref](https://blog.netapp.com/blogs/containers-vs-vms/)=>
+    - ![Containsers Vs Virual Machines](./images/containers_vs_vm.png)
+    
+- ***`Unit Vs Functional Vs Integration Vs Regression Vs User Acceptance Testing`*** [Ref](https://www.softwaretestinghelp.com/types-of-software-testing/) =>
+    - In software developement life cycle we follow different set of testing. Above are few important terminologies in that. 
+    
+
+    
