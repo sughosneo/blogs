@@ -472,7 +472,114 @@ ________________________________________________________________________________
     - Async I/O which came from Python 3.4+
     - There are differences between concurrency and paraallelsim which has been described in [Ref](https://github.com/sughosneo/blogs/blob/master/concurrency_vs_parallelism.md) in here.
     - python also has some bultin libraries to achieve that. but user needs to know the difference between CPU bound and I/O bound operations/calls. 
+
+- ***`Different Types of Locks In Python`*** [Ref](https://medium.com/better-programming/synchronization-primitives-in-python-564f89fee732) =>
+    - Locks, RLocks, Semaphores, Events, Conditions and Barriers
+    - Using this anyone can construct their own custom synchronization.
+    - These are very much useful to synchronizing any multiple threads.
+    - Simple usage of Condition which is advance one to make any individual function calls synchronous. 
     
+    ```python
+    
+    # Example of how it can be used.  
+    # https://leetcode.com/problems/print-in-order/
+  
+    from threading import Condition
+  
+    class Foo:
+    
+        isFirstCompleted = None
+        isSecondCompleted = None
+        condition = None
+        
+        def __init__(self):
+            
+            self.condition = Condition()
+            self.isFirstCompleted = False
+            self.isSecondCompleted = False
+    
+    
+        def first(self, printFirst: 'Callable[[], None]') -> None:
+                
+            with self.condition:
+                
+                printFirst()
+                self.isFirstCompleted = True
+                self.condition.notifyAll()
+                
+    
+    
+        def second(self, printSecond: 'Callable[[], None]') -> None:
+            
+            with self.condition:
+                self.condition.wait_for(
+                    lambda: self.isFirstCompleted
+                )
+                            
+                printSecond()
+                self.isSecondCompleted = True
+                self.condition.notifyAll()
+    
+        def third(self, printThird: 'Callable[[], None]') -> None:
+            
+            with self.condition:
+                self.condition.wait_for(
+                    lambda: self.isSecondCompleted
+                )
+                            
+                printThird()            
+                self.condition.notifyAll()
+  
+    ```    
+    
+    ```python
+    
+    # Another example of using lock/condition. Problem statement was :
+    # https://leetcode.com/problems/print-foobar-alternately/
+      
+    from threading import Condition
+
+    class FooBar:
+        def __init__(self, n):
+            self.n = n
+            self._condition = Condition() # This condition would act as Semaphores
+            self._isPrinted = False # This flag is going to get used as condition switching.
+            
+            
+        def foo(self, printFoo: 'Callable[[], None]') -> None:
+            
+            for i in range(self.n):
+                            
+                with self._condition:
+                    
+                    self._condition.wait_for(
+                        lambda: not self._isPrinted # So it would wait for True, that means _isPrinted value has to be False.
+                    )
+                    
+                    printFoo()
+                    self._isPrinted = True # Change the condition back to True
+                    self._condition.notifyAll()
+                    
+    
+    
+        def bar(self, printBar: 'Callable[[], None]') -> None:
+            
+            for i in range(self.n):
+                            
+                with self._condition:
+                                    
+                    self._condition.wait_for(
+                        lambda: self._isPrinted # Wait for the _isPrinted to become True. Because in after printing foo in above function it would be True.
+                    )
+                    
+                    printBar()
+                    self._isPrinted = False # Then switch the condition again back to False. So that it can be used in printFoo()
+                    
+                    self._condition.notifyAll()
+                
+    
+    ```
+
 - ***`Event Driven Programming`*** [Ref](https://www.youtube.com/watch?v=rJHTK2TfZ1I)
     - Event driven architecture is one of the programming model in different sceanrios. 
     - It has it's advantages and disadvantages respectively. 
@@ -488,7 +595,6 @@ ________________________________________________________________________________
 - ***`Testing Python Code`*** [Ref]() =>
     - You can always perform Unit Test, Functional Test and Integration Test.
     - Python provides very rich framework for perform Unit and Functional Testing.
-    
     
         
 #### References :
