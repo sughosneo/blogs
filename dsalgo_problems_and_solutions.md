@@ -104,3 +104,15 @@ Example - Input: 'AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT', Expected Output: [AAAAACCCC
 - ***`Heap implementation`***
     - https://towardsdatascience.com/data-structure-heap-23d4c78a6962
     - https://interactivepython.org/runestone/static/pythonds/Trees/BinaryHeapImplementation.html
+    
+
+Trees
+---------------------------------------------------------------------
+
+- ***`Binary Trees`*** 
+    - 
+
+- ***`BFS`***
+    - https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9
+    
+- ***`DFS`***

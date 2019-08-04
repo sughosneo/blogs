@@ -145,5 +145,15 @@ Here are few of them :
 - ***`Unit Vs Functional Vs Integration Vs Regression Vs User Acceptance Testing`*** [Ref](https://www.softwaretestinghelp.com/types-of-software-testing/) =>
     - In software developement life cycle we follow different set of testing. Above are few important terminologies in that. 
     
-
+- ***`Authentication Vs Authorization`*** [Ref](https://medium.com/datadriveninvestor/authentication-vs-authorization-716fea914d55) =>
+    - Authentication means confirming your own identity, whereas authorization means being allowed access to the system
     
+- ***`Serviceability Vs Manageability`*** [Ref]() =>
+    - Easiness to operate and maintain the system.
+    - Simplicity and spend with which a system can be repaired or maintained.
+    
+    
+References :
+-------------------------------
+
+[1] : https://www.tuliren.net/grokking-system-design/
