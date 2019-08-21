@@ -473,6 +473,12 @@ ________________________________________________________________________________
     - There are differences between concurrency and paraallelsim which has been described in [Ref](https://github.com/sughosneo/blogs/blob/master/concurrency_vs_parallelism.md) in here.
     - python also has some bultin libraries to achieve that. but user needs to know the difference between CPU bound and I/O bound operations/calls. 
 
+- ***`GIL In Python`*** [Ref](https://realpython.com/python-gil/)
+    - In simple terminology it's a mutex lock which only allows one python thread to hold the control of python interpreter.
+    - It's actually applicable in individual python process. So multithreading in single python process it's not that so effective. CPU bound operations does affected because of that though IO bound operations wouldn't have much impact. 
+    - That's the reason to utilize multiple CPU in multi-processor environment user should use Multiprocessing module rather than using multithreading. 
+    - Other reference : https://www.geeksforgeeks.org/what-is-the-python-global-interpreter-lock-gil/   
+
 - ***`Different Types of Locks In Python`*** [Ref](https://medium.com/better-programming/synchronization-primitives-in-python-564f89fee732) =>
     - Locks, RLocks, Semaphores, Events, Conditions and Barriers
     - Using this anyone can construct their own custom synchronization.
