@@ -64,11 +64,11 @@ It would be more a like a comparative study in terms of different artifacts or u
      
 4) ***By Architecture*** - Every programming language has it's own architecture model so a framework too.
 
-    ![Python Model Architecture](./images/python_language_model.png)
+    ![Python Model Architecture](./images/python_language_model.PNG)
         
     Source : Internet
     
-    ![NodeJs Model](./images/nodejs_model.png)
+    ![NodeJs Model](./images/nodejs_model.PNG)
     
     Source : Stackoverflow blog.    
     
