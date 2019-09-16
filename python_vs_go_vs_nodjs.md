@@ -78,7 +78,7 @@ It would be more a like a comparative study in terms of different artifacts or u
     
     There could be different many features or characteristic what we could compare and look at it.
 
-    ![Characteristic](./images/char_1.png) 
+    ![Characteristic](./images/char_1.PNG) 
     
 6) ***Best Fit In*** -
 
