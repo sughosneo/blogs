@@ -601,8 +601,15 @@ ________________________________________________________________________________
 - ***`Testing Python Code`*** [Ref]() =>
     - You can always perform Unit Test, Functional Test and Integration Test.
     - Python provides very rich framework for perform Unit and Functional Testing.
+
+#### Q&A :
     
-        
+- ***`20 Useful Python Snippets`*** =>
+   - https://medium.com/better-programming/20-python-snippets-you-should-learn-today-8328e26ff124
+ 
+- ***`100 popular questions for python certifications`*** =>
+    - https://www.edureka.co/blog/interview-questions/python-interview-questions/  
+    
 #### References :
 
 [1] : PEP - https://www.python.org/dev/peps/
@@ -622,3 +629,4 @@ ________________________________________________________________________________
 [8] : Quora - http://quora.com
 
 [9] : GitHub - https://github.com/
+
