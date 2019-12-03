@@ -35,7 +35,7 @@ Enough of talking, let's see few of the steps in action.
 
 Below is the workflow yaml for one of my simple service deployment.
 
-```python
+```yaml
 
         name: Service
 
