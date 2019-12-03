@@ -83,15 +83,20 @@ You can also see from below image we are able to pull the image in a different s
 
 ![Github Workflow Job Start](./images/github_action_11.png)
 
-So far so good. But as a developer they are always been few questions comes to mind. So let's see few of the popular ***Q&A***  
+So far so good. But as a developer they are always been few questions comes to mind. So let's see few of the popular ones
 
-***Q 1)*** How would I validate if I am writing correct workflow file or not ? Or how would I validate these workflow file ?
+***Q&A***  
+-------
+
+```Q 1) How would I validate if I am writing correct workflow file or not ? Or how would I validate these workflow file ?```
+
 Once you check your workflow yaml file changes in your GitHub repo under ```.git``` folder you would notice the error if your worflow file is not valid.
 Like the scenario below.
 
 ![Github Workflow Secret Configuration](./images/github_action_7.png)
 
-***Q 2)*** During the workflow job run how would I check the errors ? 
+```Q 2) During the workflow job run how would I check the errors ?```
+ 
 You can check that out once you run the actual jobs. Please see below example.
 
 ![Github Wokflow Failure](./images/github_action_4.png)
