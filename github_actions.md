@@ -1,9 +1,9 @@
 ##  GitHub Actions - (In Actions)
 
-In modern software developement it's absolutely important for us to finalize right release management process in place before 
-even developing the product feature. Particularly if the product follows the SaaS approach.
+In modern software development it's absolutely important for us to finalize right release management process before 
+even start developing the feature(s). Particularly if the product follows the SaaS approach.
 
-Some of us are might be familiar with one of this below process.
+Some of us are might be familiar with this below CI/CD process.
 
     ---> Writing Source Code 
     ---> Writing Unit Test Cases 
