@@ -24,6 +24,7 @@ In this article we would try to look into few of the popular references which po
 
 ![Devops-Tools](./images/devops-tools.png)
 
+Image Source : https://www.edureka.co/blog/devops-tools
 
 #### References :
 
