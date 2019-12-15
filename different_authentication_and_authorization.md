@@ -95,7 +95,7 @@ authentication can be summarized with below flow.
    Image Source : https://dzone.com/articles/cookies-vs-tokens-the-definitive-guide
      
     
-- ***`Bearer Authentication Or Token Authentication`*** =>
+- ***`Bearer Authorization`*** =>
     
     - It's a HTTP authentication scheme.
     - The Bearer authentication scheme was originally created as part of OAuth 2.0 in RFC 6750
@@ -106,7 +106,7 @@ authentication can be summarized with below flow.
     
     - It should only be used over HTTPS(SSL)
 
-- ***`JWT Authentication`*** =>    
+- ***`JWT Authorization`*** =>    
     
     - Again it's a HTTP authentication scheme and called as "Json Web Token" where javascript object information gets passed along.
     - Well if we just talked about token authentication then how is this different from bearer authentication ?
