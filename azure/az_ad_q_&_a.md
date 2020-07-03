@@ -2,11 +2,11 @@
 
 I have seen many confusion around [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/) service and its offerings. Sometimes as a beginner it's too much of information for you to digest. And I am no different than that. So thought of writing this article more like an interactive Q&A format for all developers in their pursuit of references.
 
-#### 1. What is Azure Active Directory not ?
+### ```1. What is Azure Active Directory not ?```
 
 There is a misconception that, as the name suggest **Azure Active Directory (Aka Azure AD)** is the cloud version of on premise Active Directory. Although it performs similar functionalities but it's quite different. 
 
-#### 2. What is Azure Active Directory then ?
+### ```2. What is Azure Active Directory then ?```
 
 As per Microsoft documentation - *"Azure Active Directory (Azure AD) is a multi-tenant, cloud-based identity and access management service"*. In modern application development landscape it acts as an independent Identity provider for both client and server. 
 
