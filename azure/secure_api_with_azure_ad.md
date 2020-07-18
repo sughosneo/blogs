@@ -64,7 +64,7 @@ We are going ahead with the options of all accounts or users registered under Az
 To let the API been discoverable as resource under Azure AD it needs to be exposed and it can be done clicking below option. 
 
 
-![Resource Id](./images/az-api-5.png)
+![Resource Id](./images/az-api-55.png)
 
 
 ***```Step - 4```***
@@ -79,7 +79,7 @@ It's time to update the API manifest file to define the application level permis
 
 With that configurattion done for *Product.API*, it's time now to make some modifications in our *Product.API* project. 
 
-![API Configuration](./images/az-api-8.png)
+![API Configuration](./images/az-api-88.png)
 
 
 Now, we would require to enable JWT authentication for our API. To do so we would require to install necessary Nuget package. 
@@ -125,7 +125,7 @@ As in our web app we are not setting up interactive login flow with Azure AD, pr
 
 ![Secret Configuration step - 1](./images/az-api-14.png)
 
-![Secret Configuration step - 2](./images/az-api-15.png)
+![Secret Configuration step - 2](./images/az-api-1515.png)
 
 
 ***```Step - 8```***
@@ -225,7 +225,7 @@ Web app configuration is done and we just need to make sure while calling the re
 
 If you are using any other popular client like **Postman** then you can follow below details to generate token and call the API.
 
-![Azure AD token generation](./images/az-api-18.png)
+![Azure AD token generation](./images/az-api-1818.png)
 
 
 ![Making API call](./images/az-api-19.png)
