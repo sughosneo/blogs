@@ -1,1 +1,12 @@
 theme: jekyll-theme-minimal
+title: Blogs
+author:
+  name: Sumit Ghosh
+  email: sughos@outlook.com
+
+jekyll-theme-minimal:
+  date_format: "%b %-d, %Y"
+  
+  social_links:
+    github:  sughosneo
+    linkedin: sumitgh07  
